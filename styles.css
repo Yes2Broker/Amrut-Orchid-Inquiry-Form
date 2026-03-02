@@ -1,0 +1,226 @@
+/* ===== Reset ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  }
+
+/* ===== Body Background ===== */
+body {
+background: #f5f7fb;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* ===== Header ===== */
+.header {
+width: 100%;
+text-align: center;
+padding: 24px 16px 10px;
+}
+
+.logo{
+  display:block;
+  margin:0 auto 20px auto;
+  max-width:180px;
+}
+
+/* ===== Form Section ===== */
+.form-section{
+  width:100%;
+  max-width:480px;
+  margin:40px auto;
+  padding:28px 22px;
+  background:#ffffff;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== Title ===== */
+.form-section h2 {
+font-size: 22px;
+font-weight: 700;
+color: #0f172a;
+text-align: center;
+margin-bottom: 20px;
+letter-spacing: -0.2px;
+}
+
+/* ===== Form Group ===== */
+.form-group {
+margin-bottom: 14px;
+}
+
+.form-group label {
+display: block;
+font-size: 12px;
+color: #64748b;
+margin-bottom: 6px;
+font-weight: 500;
+}
+
+/* ===== Inputs ===== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 16px 14px;
+border-radius: 16px;
+border: 1px solid #e2e8f0;
+background: #f8fafc;
+font-size: 16px;
+color: #0f172a;
+transition: all 0.18s ease;
+resize: none;
+}
+
+/* ===== Focus Effect ===== */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+outline: none;
+background: #ffffff;
+border-color: #2563eb;
+box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== Readonly field ===== */
+input[readonly] {
+background: #eef2f7;
+cursor: not-allowed;
+}
+
+/* ===== Button ===== */
+button {
+width: 100%;
+margin-top: 26px;
+padding: 18px;
+border-radius: 22px;
+border: none;
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+cursor: pointer;
+box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+transition: all 0.15s ease;
+}
+
+button:active {
+transform: scale(0.97);
+box-shadow: 0 6px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 500px) {
+
+.form-section{
+  width:100%;
+  max-width:480px;
+  margin:40px auto;
+  padding:28px 22px;
+  background:#ffffff;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.logo{
+  display:block;
+  margin:0 auto 20px auto;
+  max-width:180px;
+}
+
+.form-section h2 {
+font-size: 20px;
+}
+
+}
+
+/* ===== Page Layout ===== */
+body{
+  background:#f5f7fb;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px;
+  font-family:-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+/* ===== Main Card ===== */
+.form-section{
+  width:100%;
+  max-width:620px; /* wider for tablet */
+  background:#ffffff;
+  padding:36px 32px;
+  border-radius:22px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== Logo ===== */
+.logo{
+  display:block;
+  margin:0 auto 28px auto;
+  max-width:220px;
+}
+
+/* ===== Form Group ===== */
+.form-group{
+  margin-bottom:18px;
+}
+
+/* ===== Labels ===== */
+.form-group label{
+  display:block;
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:8px;
+  color:#334155;
+}
+
+/* ===== Inputs ===== */
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:18px 16px; /* larger for touch */
+  border-radius:14px;
+  border:1px solid #e2e8f0;
+  font-size:17px;
+  background:#f8fafc;
+  transition:all 0.2s ease;
+}
+
+/* ===== Focus Effect ===== */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+  background:#ffffff;
+  box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* ===== Button ===== */
+button{
+  width:100%;
+  margin-top:24px;
+  padding:20px;
+  border-radius:18px;
+  border:none;
+  background:linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:white;
+  font-size:20px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 10px 22px rgba(37,99,235,0.25);
+}
+
+/* ===== Button Tap Effect ===== */
+button:active{
+  transform:scale(0.97);
+}

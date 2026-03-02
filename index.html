@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrut Orchid Inquiry</title>
+
+    <link rel="icon" href="Assets/fav.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="form-section">
+
+        <img src="Assets/logo.webp" alt="Logo" class="logo">
+
+        <form id="leadForm">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required placeholder="Enter your name">
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" required pattern="[0-9]{10}" maxlength="10" inputmode="numeric"
+                    placeholder="Enter 10 digit number">
+            </div>
+
+            <!-- Project -->
+            <div class="form-group">
+                <label>Project</label>
+                <input type="text" value="Amrut Orchid" name="project" readonly required>
+            </div>
+
+            <!-- Home Type -->
+            <div class="form-group">
+                <label>Whats Your Preferred Home Type?</label>
+
+                <select name="homeType" required>
+                    <option value="">Select</option>
+                    <option>3BHK</option>
+                    <option>Commercial</option>
+                </select>
+
+            </div>
+
+            <!-- Budget -->
+            <div class="form-group">
+                <label>Whats your preferred budget?</label>
+
+                <select name="budget" required>
+                    <option value="">Select</option>
+                    <option>80 Lac - 1 Cr</option>
+                    <option>1 Cr - 1.5 Cr</option>
+                    <option>1.5 Cr & Above</option>
+                </select>
+
+            </div>
+
+            <!-- Closure -->
+            <div class="form-group">
+                <label>Expected Closure Date</label>
+
+                <select name="closure" required>
+                    <option value="">Select</option>
+                    <option>Less than 1 month</option>
+                    <option>1 - 2 months</option>
+                    <option>More than 2 months</option>
+                </select>
+
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="4" placeholder="Optional message"></textarea>
+            </div>
+
+            <button type="submit">Submit Inquiry</button>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
